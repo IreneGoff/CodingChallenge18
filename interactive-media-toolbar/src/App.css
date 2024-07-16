@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+h3 {
+  margin: 10px 0;
+}
