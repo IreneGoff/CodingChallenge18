@@ -27,3 +27,24 @@ function MovieSelector({ onSelect }) {
 }
 
 export default MovieSelector;
+
+import React, { useState } from 'react';
+import './App.css';
+import RateMovieButton from './RateMovieButton';
+import MovieSelector from './MovieSelector';
+
+function App() {
+  const [selectedMovie, setSelectedMovie] = useState('');
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Interactive Media Toolbar</h1>
+        <MovieSelector onSelect={(movie) => setSelectedMovie(movie)} />
+        {selectedMovie && <RateMovieButton />}
+      </header>
+    </div>
+  );
+}
+
+export default App;
